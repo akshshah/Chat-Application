@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31EFC4"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat Application"
+            android:textColor="#214BF3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/title"
+            android:id="@+id/login"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/login"
+            android:id="@+id/register"
+            android:text="Register"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_width="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profilePic"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:id="@+id/showMessage"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/background_right"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_seen"
+            android:text="Seen"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/showMessage"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_msg_seen"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_delivered"
+            android:text="Delivered"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/showMessage"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_msg_send"
+            android:drawablePadding="5dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"/>
+        
+
+
+    </RelativeLayout>
+</RelativeLayout>

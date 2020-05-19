@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ECFBF8"
+        android:id="@+id/relLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profilePic"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="Username"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/profilePic"
+            android:layout_toEndOf="@+id/profilePic"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"/>
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="7dp"
+            app:civ_border_color="#3EED2B"
+            android:id="@+id/img_on"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:layout_toEndOf="@id/profilePic"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="7dp"
+            app:civ_border_color="#FB1428"
+            android:id="@+id/img_off"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:layout_toEndOf="@id/profilePic"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:id="@+id/last_msg"
+            android:layout_toRightOf="@id/profilePic"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="18dp"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

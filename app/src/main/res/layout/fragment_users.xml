@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UsersFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSearch"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:layout_margin="7dp"
+        android:hint="Search..."/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_margin="7dp"
+        android:src="@drawable/ic_search"
+        android:id="@+id/btnSearch"
+        android:layout_alignParentRight="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/editSearch"
+        android:layout_height="match_parent"
+        android:id="@+id/recView"/>
+
+</RelativeLayout>
